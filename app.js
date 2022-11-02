@@ -2,7 +2,7 @@ $(() => {
 
 //Nav Dropdown - I wanted the dropdown to close when clicked outside but could not figure it out so I went with a button. Used the modal exercise as the basis.
 const $openDropdownBtn = $('#openDropdown')
-const $dropdown = $('#myDropdown');
+const $dropdown = $('#other-links');
 const $closeDropdownBtn = $('#closeDropdown')
 $dropdown.css('display', 'none');
 
@@ -38,7 +38,7 @@ $('#left').on('click', () => {
         currentImageIndex--
     } else {
         currentImageIndex = numberOfImages
-    }
+    } 
     $('.carousel-images').children().eq(currentImageIndex).css('display', 'block');
 
 })
@@ -60,5 +60,36 @@ const closeModal = () => {
 $openBtn.on('click', openModal);
 $closeBtn.on('click', closeModal);
 
+
+//Hover to enlarge screenshots on Projects page
+$terminalScreenshot = $('#terminal-screenshot');
+
+$terminalScreenshot.on({
+    mouseenter: enlargeImg = () => {
+        $terminalScreenshot.css('transform', 'scale(2.5)');
+        $terminalScreenshot.css('transition', 'transform 0.25s ease');
+        $terminalScreenshot.css('margin-left', '70%');
+    },
+    mouseleave: resetImg = () => {
+        $terminalScreenshot.css('transform', 'scale(1)');
+        $terminalScreenshot.css('transition', 'transform 0.25s ease');
+        $terminalScreenshot.css('margin-left', '5%');
+    }
+});
+
+$blackjackScreenshot = $('#blackjack-screenshot');
+
+$blackjackScreenshot.on({
+    mouseenter: enlargeImg = () => {
+        $blackjackScreenshot.css('transform', 'scale(2.5)');
+        $blackjackScreenshot.css('transition', 'transform 0.25s ease');
+        $blackjackScreenshot.css('margin-left', '70%');
+    },
+    mouseleave: resetImg = () => {
+        $blackjackScreenshot.css('transform', 'scale(1)');
+        $blackjackScreenshot.css('transition', 'transform 0.25s ease');
+        $blackjackScreenshot.css('margin-left', '5%');
+    }
+});
 
 })

@@ -273,6 +273,47 @@ main {
     color: black;
 }
 
+#projects-container {
+    display: flex;
+}
+
+.screenshot {
+    width: 100%;
+}
+
+#column1, column2 {
+    flex-direction: column;
+}
+
+#column1 {
+    flex-basis: 30%;
+    margin-left: 5%;
+}
+
+#column2 {
+    flex-basis: 50%;
+    margin-right: 5%;
+    margin-left: 5%;
+    text-align: left;
+}
+
+.game-title {
+    margin-bottom: 5px;
+}
+
+.game-description {
+    font-size: .95em;
+}
+
+#blackjack {
+    align-items: flex-end;
+}
+
+#terminal {
+    margin-top: 12%;
+    margin-bottom: 20%;
+}
+
 @media (max-width: 500px) {
     #greeting-h3 {
         font-size: 18px;
@@ -292,5 +333,9 @@ main {
 
     h1 {
         font-size: 20px;
+    }
+
+    #blackjack-title {
+        margin-top: 500px;
     }
 }

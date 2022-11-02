@@ -14,24 +14,43 @@
 </head>
 <body>
     <header>
-        <a href="home.html"><img id="homeicon" src="./icons8-home-page-50.png" alt=""></a>
+        <a href="home.html"><img id="homeicon" src="./images/home.png" alt=""></a>
         <nav>
             <ul>
                 <li class="nav-ul"><a class="nav-a" href="bio.html">Bio</a></li>
                 <li class="nav-ul"><a class="nav-a" href="projects.html">Projects</a></li>
                 <li class="nav-ul"><a class="nav-a" href="https://drive.google.com/file/d/1rvFMOuidNnrlny6SELTKoX3oFfLkuOnY/view?usp=share_link" target="_blank">Resume</a></li>
-                <li class="nav-ul"><a class="nav-a" href="#">Links</a></li>
-                <li id="nav-img"><img id="burger" src="./icons8-menu-24.png" alt="menu"></li>
-            </ul>
+                <li class="nav-ul" id="openDropdown">Links
+                    <div class="dropdown">
+                        <div id="other-links" class="dropdown-content">
+                            <a class="dropdown-links" href="https://github.com/pmurphy926" target="_blank">Github</a>
+                            <a class="dropdown-links" href="#">Link 2</a>
+                            <a class="dropdown-links" href="https://www.ebay.com/sch/painiac926/m.html?_dkr=1&iconV2Request=true&_blrs=recall_filtering&_ssn=painiac926&_oac=1" target="_blank">eBay Store</a>
+                            <a class="dropdown-links" id="closeDropdown">Close</a>
+                        </div>
+                    </div>
+                </li>
+             </ul>
         </nav>
         <h1>Projects</h1>
     </header>
     <main>
-       
+       <div id="projects-container">
+            <div id="column1">
+                <h3 class="game-title">Terminal Game</h3>
+                <img class="screenshot" id="terminal-screenshot" src="./images/terminal.png" alt="terminal game screenshot">
+                <h3 class="game-title" id="blackjack-title">Blackjack</h3>
+                <img class="screenshot" id="blackjack-screenshot" src="./images/blackjack.png" alt="blackjack game screenshot">
+            </div>
+            <div id="column2">
+                <p class="game-description" id="terminal">In this terminal game I created along with fellow General Assembly student and JavaScript luminary Logan Beckham, the player starts with a Pokemon-like monster with randomized stats for hit points, attack power, and accuracy. The goal is to fight and survive against an enemy team of monsters with likewise randomized stats. Every monster that is defeated joins the player's party and the player can use a turn to switch to a monster with more hit points, attack power, or accuracy as needed. The choices of the player are all mapped to JavaScript functions that are responsive to player input. The game ends when either the enemy party has been defeated or the player's party has been vanquished.</p>
+                <p class="game-description" id="blackjack">In this simple Blackjack game, the player's goal is to hope luck is on their side when drawing cards. The cards drawn are randomized using the Math functions native to JavaScript. Future goals for this game include the addition of a dealer's hand for competition and the introduction of wagers the player can make. While no real dollars are at stake here, the player can practice honing their resolve in the face of pressure when they confront the real thing on the boardalk of Atlantic City or the fabled strip of Las Vegas.</p>
+            </div>
+       </div>
     </main>
     <footer>
-        <a class="contact-icons" href="https://www.linkedin.com/in/patrick-murphy-062a15103/" target="_blank"><img id="linkedin" src="./linked.png" alt="linked in icon"></a>
-        <a class="contact-icons" href="mailto:patrick.murphy926@gmail.com"><img id="email" src="./envelope.png" alt="email icon"></a>
+        <a class="contact-icons" href="https://www.linkedin.com/in/patrick-murphy-062a15103/" target="_blank"><img id="linkedin" src="./images/linked.png" alt="linked in icon"></a>
+        <a class="contact-icons" href="mailto:patrick.murphy926@gmail.com"><img id="email" src="./images/envelope.png" alt="email icon"></a>
     </footer>
 </body>
 </html>
