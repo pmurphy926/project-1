@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Padauk&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <title>About Patrick Murphy</title>
+</head>
+<body>
+    <header>
+        <a href="home.html"><img id="homeicon" src="./images/home.png" alt=""></a>
+        <nav>
+            <ul>
+                <li class="nav-ul"><a class="nav-a" href="bio.html">Bio</a></li>
+                <li class="nav-ul"><a class="nav-a" href="projects.html">Projects</a></li>
+                <li class="nav-ul"><a class="nav-a" href="https://drive.google.com/file/d/1rvFMOuidNnrlny6SELTKoX3oFfLkuOnY/view?usp=share_link" target="_blank">Resume</a></li>
+                <li class="nav-ul"><a class="nav-a" href="links.html">Links</a></li>
+                <li id="nav-img"><img id="burger" src="./icons8-menu-24.png" alt="menu"></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>About Me</h1>
+        <div class="container">
+            <div class="greeting">
+                <h3 id="greeting-h3">Hello! <br />Let me introduce myself.</h3>
+            </div>
+			<div class="carousel">
+				<div class="carousel-images">
+					<img class="bio-img" id="splash" src="./images/splash.png" alt="baby in kiddie pool" />
+					<img class="bio-img" id="halloween" src="./images/halloween.png" alt="baby hanging out on halloween"/>
+					<img class="bio-img" id="lap" src="./images/lap.png" alt="baby on father's lap"/>
+					<img class="bio-img" id="snow" src="./images/snow.png" alt="posing in the snow" />
+				</div>
+                <div class="buttons">
+                    <img class="carousel-button" id="left" src="./images/left.png" alt="back arrow">
+                    <img class="carousel-button" id="right" src="./images/right.png" alt="forward arrow">
+                </div>
+			</div>
+		</div>
+        <div class="background">
+                <p>I am a former educator who is looking to learn new skills that can help both teachers and students in day to day life. I know the struggles firsthand and feel as though the impact I sought to make in the lives of my students can be better address from a systemic standpoint.</p>
+                <p>I was born, grew up, and still live in Brooklyn, New York. From my days cleaning movie theaters, to my time managing a shipping department, all the way through my years of teaching I have always sought to work with my colleagues solve problems and make the work environment more welcoming and equitable.</p>
+                <p>I hope to bring my perspective as an educator, parent, and team member to my software development to build solutions to real problems.</p>
+                <hr>
+        </div>
+        <div class="bio-columns">
+            <div id="column1">
+                <h3 class="emoji-head">I am a...</h3>
+                <hr>
+                <ul>
+                    <li class="emoji">🗣 Communicator</li>
+                    <li class="cd ..emoji">⚠️ Risk-taker</li>
+                    <li class="emoji">👍 Collaborator</li>
+                    <li class="emoji">📝 Learner</li>
+                </ul>
+            </div>
+            <div id="column2">
+                <h3 class="emoji-head">I love...</h3>
+                <hr>
+                <ul>
+                    <li class="emoji">🎧 Music</li>
+                    <li class="emoji">📽 Movies</li>
+                    <li class="emoji">⚾️ Baseball</li>
+                    <li class="emoji">💻 Computers</li>
+                </ul>
+            </div>
+        </div>
+        <button class="button-modal" id="openModal">?</button>
+		<div id="modal">
+			<div id="modal-textbox">
+				<h3 class="head-modal">Curious about my interests?</h3>
+				<p class="p-modal">Check out <a id="a-modal" href="https://rateyourmusic.com/~Manlington266" target="_blank">my profile on Rate Your Music</a>, where I keep track of what I watch and listen to!</p>
+                <button class="button-modal" id="closeModal" href="#">Close</button>
+			</div>
+		</div>
+    </main>
+    <footer>
+        <a class="contact-icons" href="https://www.linkedin.com/in/patrick-murphy-062a15103/" target="_blank"><img id="linkedin" src="./images/linked.png" alt="linked in icon"></a>
+        <a class="contact-icons" href="mailto:patrick.murphy926@gmail.com"><img id="email" src="./images/envelope.png" alt="email icon"></a>
+    </footer>
+</body>
+</html>
+

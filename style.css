@@ -1,0 +1,263 @@
+h1, h2, h3 {
+    font-family: 'Manrope', sans-serif;
+}
+
+p, h2, h3 {
+    font-family: 'Padauk', sans-serif;
+    font-size: 1.5em;
+}
+
+li {
+    font-family: 'Padauk', sans-serif;
+}
+
+.emoji {
+    font-size: 1.5em;
+}
+
+body {
+    background-image: linear-gradient(to right, antiquewhite, rgb(249, 249, 249));
+    background-size: cover;
+}
+
+header {
+    background-image: linear-gradient(to right, antiquewhite, rgb(249, 249, 249));
+    background-size: cover;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+footer {
+    position: sticky;
+    top: 0;
+}
+
+.nav-ul {
+    border-left: 1px solid black;
+    padding: 1%;
+    justify-content: space-between;
+}
+
+.nav-a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-a:hover {
+    background-color: lightgrey;
+}
+
+.nav-ul:first-child, :last-child {
+    border-left: none;
+}
+
+ul li {
+    display: inline-block;
+    list-style: none;
+    border-left: 1px solild black;
+    border-right: 1px solild black;
+}
+
+#homeicon {
+    width: 35px;
+    float: left;
+}
+
+#homeicon:hover {
+    width: 35px;
+    float: left;
+    background-color: lightgray;
+}
+
+#burger {
+    width: 90%;
+}
+
+main {
+    text-align: center;
+}
+
+#welcome {
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+
+#home-bio {
+    width: 40%;
+    margin: 0 auto;
+    padding: 1% 0 1% 0;
+
+}
+
+#email {
+    width: 30px;
+    height: 30px;
+    float: right;
+
+}
+
+#linkedin {
+    width: 25px;
+    height: 25px;
+    float: right;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.greeting {
+    display: flex;
+    width: 40%;
+}
+
+#greeting-h3 {
+    align-items: flex-start;
+    font-size: 3em;
+    margin-left: 45%;
+}
+
+.caption {
+    align-items: flex-end;
+    width: 40%;
+}
+
+.container {
+    display: flex;
+}
+
+.carousel {
+	width: 45%;
+	justify-content: space-around;
+    align-items: flex-end;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+.bio-img {
+	width: 100%;
+	border-radius: 25px;
+	display: none;
+    border: 5px solid slategrey;
+}
+
+.carousel-button {
+	padding: 10px;
+    width: 2%;
+}
+.carousel-button:hover {
+	cursor: pointer;
+}
+
+.carousel-images img:first-of-type {
+	display: block;
+}
+
+.background {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.bio-columns {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-basis: 60%;
+}
+
+.bio-columns ul {
+    list-style: none;
+    flex-basis: 40%;
+}
+
+
+.bio-columns ul li {
+    display: block;
+    text-align: left;
+}
+
+.column1 {
+    flex: 50%;
+}
+
+.emoji-head {
+    margin: 0;
+}
+
+#modal {
+	background-color: rgba(0, 0, 0, 0.4);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	overflow: auto;
+}
+
+#modal-textbox {
+	background-image: linear-gradient(to right, antiquewhite, rgb(249, 249, 249));
+	height: 250px;
+	width: 450px;
+	border-radius: 25%;
+	margin: 150px auto;
+	box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    padding: 1%;
+}
+
+#openModal {
+    border: 1px solid black;
+    border-radius: 100%;
+    background-color: transparent;
+    font-size: 2em;
+}
+
+#openModal:hover {
+    cursor: pointer;
+    background-color: transparent;
+    background-color: lightgray;
+}
+
+#closeModal {
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 100%;
+    padding: 1%;
+    cursor: pointer;
+}
+
+#closeModal:hover {
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 100%;
+    padding: 1%;
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+#a-modal {
+    color: black;
+}
+
+@media (max-width: 500px) {
+    #greeting-h3 {
+        font-size: 18px;
+    }
+
+    .container {
+        flex-wrap: wrap;
+    }
+
+    body {
+        text-align: center;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
