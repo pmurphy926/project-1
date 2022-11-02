@@ -61,7 +61,7 @@ $openBtn.on('click', openModal);
 $closeBtn.on('click', closeModal);
 
 
-//Hover to enlarge screenshots on Projects page
+//Hover to enlarge screenshots on Projects page. Animations aren't smooth.
 $terminalScreenshot = $('#terminal-screenshot');
 
 $terminalScreenshot.on({
@@ -74,6 +74,7 @@ $terminalScreenshot.on({
         $terminalScreenshot.css('transform', 'scale(1)');
         $terminalScreenshot.css('transition', 'transform 0.25s ease');
         $terminalScreenshot.css('margin-left', '5%');
+        $terminalScreenshot.css('z-axis', '0');
     }
 });
 
@@ -89,6 +90,7 @@ $blackjackScreenshot.on({
         $blackjackScreenshot.css('transform', 'scale(1)');
         $blackjackScreenshot.css('transition', 'transform 0.25s ease');
         $blackjackScreenshot.css('margin-left', '5%');
+        $blackjackScreenshot.css('z-axis', '0');
     }
 });
 
