@@ -39,16 +39,16 @@ footer {
     justify-content: space-between;
 }
 
+.nav-ul:hover {
+    background-color: lightgrey;
+}
+
 .nav-a {
     text-decoration: none;
     color: black;
 }
 
-.nav-a:hover {
-    background-color: lightgrey;
-}
-
-.nav-ul:first-child, :last-child {
+.nav-ul:first-child {
     border-left: none;
 }
 
@@ -70,8 +70,41 @@ ul li {
     background-color: lightgray;
 }
 
-#burger {
-    width: 90%;
+
+#dropbtn {
+    cursor: pointer;
+}
+  
+#dropbtn:hover {
+    background-color: lightgray;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(249, 249, 249);
+    min-width: 160px;
+    z-index: 1;
+}
+  
+.dropdown-links {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-links:hover {
+    background-color: lightgray;
+}
+
+#closeDropdown {
+    cursor: pointer;
 }
 
 main {

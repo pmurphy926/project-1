@@ -1,12 +1,24 @@
 $(() => {
 
-const dropdown = () => {
+//Nav Dropdown - I wanted the dropdown to close when clicked outside but could not figure it out so I went with a button. Used the modal exercise as the basis.
+const $openDropdownBtn = $('#openDropdown')
+const $dropdown = $('#myDropdown');
+const $closeDropdownBtn = $('#closeDropdown')
+$dropdown.css('display', 'none');
 
+const openDropdown = () => {
+    $dropdown.css('display', 'block');
+}
+ 
+const closeDropdown = () => {
+    $dropdown.css('display', 'none');
 }
 
-$('#burger').on('click', dropdown).hide();
+$openDropdownBtn.on('click', openDropdown);
+$closeDropdownBtn.on('click', closeDropdown);
 
 
+//Bio Image Carousel - I leaned heavily on the exercise material for this.
 let numberOfImages = $('.carousel-images').children().length - 1;
 let currentImageIndex = 0;
 
@@ -31,6 +43,7 @@ $('#left').on('click', () => {
 
 })
 
+//Interests Modal - I used the code along from the exercise for this, just this time without all the bugs.
 const $openBtn = $('#openModal');
 const $modal = $('#modal');
 const $closeBtn = $('#closeModal');
