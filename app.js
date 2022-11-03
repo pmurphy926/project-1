@@ -4,7 +4,7 @@ $(() => {
 const $openDropdownBtn = $('#openDropdown')
 const $dropdown = $('#other-links');
 const $closeDropdownBtn = $('#closeDropdown')
-$dropdown.css('display', 'none');
+
 
 const openDropdown = () => {
     $dropdown.css('display', 'block');
@@ -47,7 +47,7 @@ $('#left').on('click', () => {
 const $openBtn = $('#openModal');
 const $modal = $('#modal');
 const $closeBtn = $('#closeModal');
-$modal.css('display', 'none');
+// $modal.css('display', 'none');
 
 const openModal = () => {
     $modal.css('display', 'block');
@@ -61,6 +61,29 @@ $openBtn.on('click', openModal);
 $closeBtn.on('click', closeModal);
 
 
+//Enlarge screenshots on click - couldn't figure this out
+// $terminalScreenshot = $('#terminal-screenshot');
+
+// const enlargeImg = () => {
+//     $terminalScreenshot.on('click').addClass('embiggen');
+//     if ($terminalScreenshot instanceof embiggen){
+//     $terminalScreenshot.css('transform', 'scale(2.5)');
+//     terminalScreenshot.css('transition', 'transform 0.25s ease');
+//     $terminalScreenshot.css('justify-content', 'center');
+//     }
+// }
+
+// enlargeImg
+
+// const resetImg = () => {
+//     $terminalScreenshot.removeClass('embiggen');
+//     terminalScreenshot.css('transform', 'scale(1)');
+//     $terminalScreenshot.css('transition', 'transform 0.25s ease');
+//     }
+
+// $terminalScreenshot.on('click', enlargeImg)
+// $('.embiggen').on('click', resetImg)
+
 //Hover to enlarge screenshots on Projects page. Animations aren't smooth.
 $terminalScreenshot = $('#terminal-screenshot');
 
@@ -68,13 +91,15 @@ $terminalScreenshot.on({
     mouseenter: enlargeImg = () => {
         $terminalScreenshot.css('transform', 'scale(2.5)');
         $terminalScreenshot.css('transition', 'transform 0.25s ease');
-        $terminalScreenshot.css('margin-left', '70%');
+        $terminalScreenshot.css('margin', 'o auto');
+        // $terminalScreenshot.css('margin-left', '70%');
+        // $terminalScreenshot.css('align-self', 'flex-end');
     },
     mouseleave: resetImg = () => {
         $terminalScreenshot.css('transform', 'scale(1)');
         $terminalScreenshot.css('transition', 'transform 0.25s ease');
-        $terminalScreenshot.css('margin-left', '5%');
-        $terminalScreenshot.css('z-axis', '0');
+        // $terminalScreenshot.css('margin-left', '2.5%');
+        // $terminalScreenshot.css('z-axis', '0');
     }
 });
 
@@ -89,9 +114,20 @@ $blackjackScreenshot.on({
     mouseleave: resetImg = () => {
         $blackjackScreenshot.css('transform', 'scale(1)');
         $blackjackScreenshot.css('transition', 'transform 0.25s ease');
-        $blackjackScreenshot.css('margin-left', '5%');
+        $blackjackScreenshot.css('margin-left', '2.5%');
         $blackjackScreenshot.css('z-axis', '0');
     }
 });
+
+//Tried to made it drier but it behaved differently when I kept it on one line.
+
+// $blackjackScreenshot.on({
+//     mouseenter: enlargeImg = () => {
+//         $blackjackScreenshot.css('transform', 'scale(2.5)','transition', 'transform 0.25s ease', 'margin-left', '70%');
+//     },
+//     mouseleave: resetImg = () => {
+//         $blackjackScreenshot.css('transform', 'scale(1)', 'transition', 'transform 0.25s ease', 'margin-left', '5%', 'z-axis', '0');
+//     }
+// });
 
 })

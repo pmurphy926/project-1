@@ -52,10 +52,17 @@ footer {
     border-left: none;
 }
 
+.nav-ul:last-child {
+    cursor: pointer;
+}
+
+#openDropdown {
+    font-size: 1em;
+}
+
 ul li {
     display: inline-block;
     list-style: none;
-    border-left: 1px solild black;
     border-right: 1px solild black;
 }
 
@@ -84,14 +91,32 @@ ul li {
     display: inline-block;
 }
 
+
+/* Animation example from https://codinhood.com/micro/10-dropdown-menu-animations-css-transform */
+
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: rgb(249, 249, 249);
     min-width: 160px;
     z-index: 1;
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
 }
   
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+
+
 .dropdown-links {
     color: black;
     padding: 12px 16px;
@@ -222,6 +247,7 @@ main {
 	width: 100%;
 	z-index: 1;
 	overflow: auto;
+    display: none;
 }
 
 #modal-textbox {
