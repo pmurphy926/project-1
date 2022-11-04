@@ -61,6 +61,17 @@ $openBtn.on('click', openModal);
 $closeBtn.on('click', closeModal);
 
 
+//Email button
+const $emailBtn = $('#button');
+
+const submitEmail = () => {
+    const $message = $('<p>');
+    $('.form').append($message);
+    $message.css('font-size', '1em').text('Thanks! I am looking forward to connecting.')
+}
+
+$emailBtn.on('click', submitEmail);
+
 //Enlarge screenshots on click - couldn't figure this out
 // $terminalScreenshot = $('#terminal-screenshot');
 

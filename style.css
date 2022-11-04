@@ -1,8 +1,8 @@
-h1, h2, h3 {
+h1 {
     font-family: 'Manrope', sans-serif;
 }
 
-p, h2, h3 {
+p, h2, h3, h4 {
     font-family: 'Padauk', sans-serif;
     font-size: 1.5em;
 }
@@ -17,6 +17,7 @@ li {
 
 body {
     background-image: linear-gradient(to right, rgb(249, 219, 180), rgb(249, 249, 249));
+    /* background-image: linear-gradient(to right, rgb(249, 219, 180), rgb(249, 249, 249)); */
     background-size: cover;
 }
 
@@ -325,24 +326,76 @@ main {
 .game-description {
     font-size: .95em;
 }
-ß
+
 #blackjack {
     align-items: flex-end;
 }
 
 #terminal {
     margin-top: 12%;
-    margin-bottom: 20%;
+    margin-bottom: 25%;
 }
 
 .screenshot {
     transition: transform .25s ease; 
 }
 
-.screenshot:hover {
+.screenshot:active {
     transform: scale(2.5) translateX(10em);
     transition: transform .25s ease;
 }
+
+#form-title {
+    margin-top: 0;
+    margin-bottom: 1px;
+}
+
+
+#welcomeScreen {
+	background-image: url(./images/nyc.png), linear-gradient(to right, rgb(249, 219, 180), rgb(249, 249, 249));
+    background-size: cover;
+    display: flex;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+    left: 0;
+    right: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	overflow: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome-heading {
+    font-family: 'Manrope', sans-serif;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    background-image: linear-gradient(
+        to left,
+        #3c5f90 0%,
+        #224e52 25%,
+        antiquewhite 75%,
+        rgb(249, 249, 249)0 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: antiquewhite;
+    animation: colorWipe 2s linear infinite;
+    display: inline-block;
+}
+
+@keyframes colorWipe {
+    to {
+      background-position: 200% center;
+    }
+  }
 
 @media (max-width: 500px) {
     #greeting-h3 {
