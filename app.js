@@ -85,39 +85,41 @@ $closeBtn.on('click', closeModal);
 // $('.embiggen').on('click', resetImg)
 
 //Hover to enlarge screenshots on Projects page. Animations aren't smooth.
-$terminalScreenshot = $('#terminal-screenshot');
+// $terminalScreenshot = $('#terminal-screenshot');
 
-$terminalScreenshot.on({
-    mouseenter: enlargeImg = () => {
-        $terminalScreenshot.css('transform', 'scale(2.5)');
-        $terminalScreenshot.css('transition', 'transform 0.25s ease');
-        $terminalScreenshot.css('margin', 'o auto');
-        // $terminalScreenshot.css('margin-left', '70%');
-        // $terminalScreenshot.css('align-self', 'flex-end');
-    },
-    mouseleave: resetImg = () => {
-        $terminalScreenshot.css('transform', 'scale(1)');
-        $terminalScreenshot.css('transition', 'transform 0.25s ease');
-        // $terminalScreenshot.css('margin-left', '2.5%');
-        // $terminalScreenshot.css('z-axis', '0');
-    }
-});
+// $terminalScreenshot.on({
+//     // mouseenter: enlargeImg = () => {
+//     //     $terminalScreenshot.css('transform', 'scale(2.5)', 'translateX', '7em');
+//     //     $terminalScreenshot.css('transition', 'transform 0.25s ease');
+//     //     // $terminal`Screenshot.css('transform', 'translate 25%');
+//     //     // $terminalScreenshot.css('margin', 'o auto');
+//     //     // $terminalScreenshot.css('margin-left', '70%');
+//     //     // $terminalScreenshot.css('align-self', 'flex-start');
+//     // }
+//     mouseleave: resetImg = () => {
+//         $terminalScreenshot.css('transform', 'scale(1)');
+//         $terminalScreenshot.css('transition', 'transform 0.25s ease');
+//         // $terminalScreenshot.css('margin-left', '2.5%');
+//         // $terminalScreenshot.css('z-axis', '0');
+//     }
+// });
 
-$blackjackScreenshot = $('#blackjack-screenshot');
+// $blackjackScreenshot = $('#blackjack-screenshot');
 
-$blackjackScreenshot.on({
-    mouseenter: enlargeImg = () => {
-        $blackjackScreenshot.css('transform', 'scale(2.5)');
-        $blackjackScreenshot.css('transition', 'transform 0.25s ease');
-        $blackjackScreenshot.css('margin-left', '70%');
-    },
-    mouseleave: resetImg = () => {
-        $blackjackScreenshot.css('transform', 'scale(1)');
-        $blackjackScreenshot.css('transition', 'transform 0.25s ease');
-        $blackjackScreenshot.css('margin-left', '2.5%');
-        $blackjackScreenshot.css('z-axis', '0');
-    }
-});
+// $blackjackScreenshot.on({
+//     mouseenter: enlargeImg = () => {
+//         $blackjackScreenshot.css('transform', 'scale(2.5)');
+//         $blackjackScreenshot.css('transition', 'transform 0.25s ease');
+//         $blackjackScreenshot.animate({transform: 'translateX(25%)'})
+//         // $blackjackScreenshot.css('margin-left', '70%');
+//     },
+//     mouseleave: resetImg = () => {
+//         $blackjackScreenshot.css('transform', 'scale(1)');
+//         $blackjackScreenshot.css('transition', 'transform 0.25s ease');
+//         // $blackjackScreenshot.css('margin-left', '2.5%');
+//         // $blackjackScreenshot.css('z-axis', '0');
+//     }
+// });
 
 //Tried to made it drier but it behaved differently when I kept it on one line.
 

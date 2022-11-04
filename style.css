@@ -16,12 +16,12 @@ li {
 }
 
 body {
-    background-image: linear-gradient(to right, antiquewhite, rgb(249, 249, 249));
+    background-image: linear-gradient(to right, rgb(249, 219, 180), rgb(249, 249, 249));
     background-size: cover;
 }
 
 header {
-    background-image: linear-gradient(to right, antiquewhite, rgb(249, 249, 249));
+    background-image: linear-gradient(to right, rgb(249, 219, 180), rgb(249, 249, 249));
     background-size: cover;
     text-align: center;
     position: sticky;
@@ -325,7 +325,7 @@ main {
 .game-description {
     font-size: .95em;
 }
-
+ß
 #blackjack {
     align-items: flex-end;
 }
@@ -333,6 +333,15 @@ main {
 #terminal {
     margin-top: 12%;
     margin-bottom: 20%;
+}
+
+.screenshot {
+    transition: transform .25s ease; 
+}
+
+.screenshot:hover {
+    transform: scale(2.5) translateX(10em);
+    transition: transform .25s ease;
 }
 
 @media (max-width: 500px) {
