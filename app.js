@@ -61,7 +61,7 @@ $openBtn.on('click', openModal);
 $closeBtn.on('click', closeModal);
 
 
-//Email button
+//Email button - just something extra
 const $emailBtn = $('#button');
 
 const submitEmail = () => {
