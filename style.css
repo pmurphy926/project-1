@@ -16,13 +16,13 @@ li {
 }
 
 body {
-    background-image: linear-gradient(to right, rgb(96, 146, 197), rgb(249, 249, 249));
+    background-image: linear-gradient(to right, rgb(249, 219, 180), rgb(249, 249, 249));
     /* background-image: linear-gradient(to right, rgb(249, 219, 180), rgb(249, 249, 249)); */
     background-size: cover;
 }
 
 header {
-    background-image: linear-gradient(to right, rgb(96, 146, 197), rgb(249, 249, 249));
+    background-image: linear-gradient(to right, rgb(249, 219, 180), rgb(249, 249, 249));
     background-size: cover;
     text-align: center;
     position: sticky;
@@ -92,12 +92,12 @@ ul li {
     display: inline-block;
 }
 
-.decoration {
+/* .decoration {
     display: flex;
-}
+} */
 
-#bottomleft {
-    flex-basis: 5%;
+#bottom-left {
+    width: 15%;
     float: left;
 }
 
