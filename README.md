@@ -7,3 +7,5 @@ I wanted my site to me streamlined and easily navigable - no guessing as to wher
 
 ## Unresolved Issues
 I tried to get some hovering to work on the images using a js function, but it behaved strangely and went with a "click and hold" which isn't very intutive but worked in a pinch. My projects page was very difficult in terms of responsive design - I had originally built it as two columns; one for the screenshots and the other for the descriptions. This didn't work on the narrower mobile screen, so I just made two divs with the same info - one that displays at one screen width, and a second that displays on a narrower screen width. I felt that I should have rebuilt the page so that I wouldn't have two code blocks with the same info, but considering the time I had left and how it actually turned out looking okay on mobile, I'm happy with it as a band-aid.
+
+My links dropdown was a challege for mobile - I couldn't get the dropdown div to respond to amy width adjustments, but I was able to float it to the left and align the text to the left so it was functional. It creates extra space to the right that you can scroll to, which I don't love.

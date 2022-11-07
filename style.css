@@ -187,7 +187,6 @@ main {
     margin-right: 5%;
 }
 
-
 .bio-img {
 	width: 100%;
 	border-radius: 25px;
@@ -448,6 +447,7 @@ main {
     }
 
     #terminal {
+        margin-top: 16px;
         margin-bottom: 10px;
     }
 
