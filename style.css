@@ -238,6 +238,7 @@ main {
 	position: fixed;
 	top: 0;
 	bottom: 0;
+    left: 0;
 	height: 100%;
 	width: 100%;
 	z-index: 1;
@@ -362,8 +363,6 @@ main {
 /* Animnation adapted from https://alvarotrigo.com/blog/css-text-animations/ */
 #welcome-heading {
     font-family: 'Manrope', sans-serif;
-    border: none;
-    background-color: transparent;
     cursor: pointer;
     background-image: linear-gradient(
         to left,
@@ -372,15 +371,12 @@ main {
         antiquewhite 75%,
         rgb(249, 249, 249)0 100%
     );
-    background-size: auto auto;
-    background-clip: border-box;
     background-size: 200% auto;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: antiquewhite;
     animation: colorWipe 2s linear infinite;
-    display: inline-block;
 }
 
 @keyframes colorWipe {
@@ -388,6 +384,10 @@ main {
       background-position: 200% center;
     }
   }
+
+#projects-mobile {
+    display: none;
+}
 
 @media (max-width: 500px) {
     #greeting-h3 {
@@ -420,10 +420,6 @@ main {
         font-size: 20px;
     }
 
-    #blackjack-title {
-        margin-top: 500px;
-    }
-
     .emoji-head {
         font-size: 16px;
     }
@@ -432,13 +428,14 @@ main {
         font-size: 14px;
     }
 
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: rgb(249, 249, 249);
-        z-index: 1;
-        animation: growDown 300ms ease-in-out;
-        transform-origin: -40% 0;
+    .dropdown {
+        float: left;
+        text-align: left;
+        width: 25px;
+    }
+    
+    #other-links {
+        width: 40px;
     }
 
     #modal-textbox {
@@ -450,23 +447,31 @@ main {
         padding: 1%;
     }
 
+    #terminal {
+        margin-bottom: 10px;
+    }
+
     #projects-container {
-        flex-wrap: wrap;
+        display: none;
+    }
+
+    #projects-mobile {
+        display: block;
     }
     
-    #column1, #column2 {
-        flex-direction: row;
-    }
-
-    .game-title {
-        flex-basis: 100%;
-    }
-
     .screenshot:active {
         transform: none; 
     }
 
     #form-title {
         font-size: .95em;
+    }
+
+    #column1 {
+        flex-basis: 100%;
+        margin-right: 5%;
+    }
+    #column2 {
+        display: none;
     }
 }

@@ -51,10 +51,22 @@ const $closeBtn = $('#closeModal');
 
 const openModal = () => {
     $modal.css('display', 'block');
+    $('.container').css('filter', 'blur(8px)');
+    $('.background').css('filter', 'blur(8px)');
+    $('.bio-columns').css('filter', 'blur(8px)');
+    $('header').css('filter', 'blur(8px)');
+    $('footer').css('filter', 'blur(8px)');
+    $('h1').css('filter', 'blur(8px)');
 }
 
 const closeModal = () => {
     $modal.css('display', 'none');
+    $('.container').css('filter', 'none');
+    $('.background').css('filter', 'none');
+    $('.bio-columns').css('filter', 'none');
+    $('header').css('filter', 'none');
+    $('footer').css('filter', 'none');
+    $('h1').css('filter', 'none');
 }
 
 $openBtn.on('click', openModal);
